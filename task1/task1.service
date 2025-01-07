@@ -1,0 +1,17 @@
+[Unit]
+Description=Simple Node.js HTTP Server
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node /home/ubuntu/task1/task1.js
+WorkingDirectory=/home/ubuntu/task1
+Restart=always
+User=ubuntu
+Group=ubuntu
+
+# Log dosyasına yönlendirme
+StandardOutput=append:/var/log/task1.log
+StandardError=append:/var/log/task1_error.log
+
+[Install]
+WantedBy=multi-user.target

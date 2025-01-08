@@ -28,6 +28,8 @@ Demonstrate the ability to deploy and manage a service on a Linux system.
    ```bash
    cat task1.js
    ```
+   <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image21.png" alt="Logo" width="1200">
+
 5. Create `task1.service` in `/etc/systemd/system`:
    ```bash
    sudo vim task1.service
@@ -36,6 +38,7 @@ Demonstrate the ability to deploy and manage a service on a Linux system.
    ```bash
    sudo cat /etc/systemd/system/task1.service
    ```
+   <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image28.png" alt="Logo" width="1200">
 7. Create log files:
    ```bash
    sudo touch /var/log/task1.log /var/log/task1_error.log
@@ -57,7 +60,9 @@ Demonstrate the ability to deploy and manage a service on a Linux system.
     cat /var/log/task1.log
     cat /var/log/task1_error.log
     ```
+    <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image6.png" alt="Logo" width="1200">
 11. Ensure the service starts automatically on boot.
+    <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image19.png" alt="Logo" width="1200">
 
 ---
 
@@ -73,25 +78,70 @@ Showcase containerization and deployment skills.
 
 ### Solution
 1. Create `task2` directory.
-2. Install Docker.
-3. Ensure Docker is successfully installed.
-4. Create a simple application in the `task2` directory.
-5. Initialize `package.json` file.
-6. Install `express`:
+
+    <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image11.png" alt="Logo" width="1200">
+    
+3. Install Docker.
+
+   <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image29.png" alt="Logo" width="1200">
+   
+   <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image1.png" alt="Logo" width="1200">
+   
+   <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image9.png" alt="Logo" width="1200">
+   
+4. Ensure Docker is successfully installed.
+
+   <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image23.png" alt="Logo" width="1200">
+    
+   <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image2.png" alt="Logo" width="1200">
+   
+5. Create a simple application in the `task2` directory.
+
+   <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image5.png" alt="Logo" width="1200">
+   
+6. Initialize `package.json` file.
+
+   <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image32.png" alt="Logo" width="1200">
+   
+7. Install `express`:
    ```bash
    npm install express
    ```
+<img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image22.png" alt="Logo" width="1200">
+
 7. Create `Dockerfile`.
-8. Create `docker-compose.yaml` with 2 replicas configured.
-9. Create `nginx.conf` file.
-10. Install Docker Compose.
-11. Run the application:
+
+    <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image17.png" alt="Logo" width="1200">
+    
+9. Create `docker-compose.yaml` with 2 replicas configured.
+
+    <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image24.png" alt="Logo" width="1200">
+    
+10. Create `nginx.conf` file.
+
+    <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image14.png" alt="Logo" width="1200">
+    
+11. List `task2` directory files
+
+     <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image12.png" alt="Logo" width="1200">    
+
+12. Install Docker Compose.
+
+     <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image30.png" alt="Logo" width="1200">
+     
+13. Run the application:
     ```bash
     docker-compose up
     ```
-12. Check if containers are working properly.
-13. Verify the public IP address of the EC2 instance.
+    <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image4.png" alt="Logo" width="1200">
+    
+14. Check if containers are working properly.
 
+    <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image20.png" alt="Logo" width="1200">
+    
+15. Verify the public IP address of the EC2 instance.
+
+    <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image15.png" alt="Logo" width="1200">
 ---
 
 ## Task 3: Kubernetes Cluster Setup
@@ -103,23 +153,43 @@ Validate experience with Kubernetes and high-availability configurations.
 1. Deploy the application on a Kubernetes cluster.
 2. Use a tool like `kubectl`, Helm, or Kustomize for deployment.
 3. Ensure the application is reachable via a LoadBalancer or Ingress.
+
+
+
 4. Demonstrate rolling updates for the application.
 
 ### Solution
 1. Create `task3` directory.
 2. Create a Kubernetes deployment file (`deployment.yaml`).
+
+<img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image27.png" alt="Logo" width="1200">
+
 3. Deploy the application:
    ```bash
    kubectl apply -f deployment.yaml
    ```
+<img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image26.png" alt="Logo" width="1200">
+
 4. Create a LoadBalancer service (`service.yaml`) to expose the application:
    ```bash
    kubectl apply -f service.yaml
    ```
-5. Demonstrate rolling updates:
+<img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image7.png" alt="Logo" width="1200">
+
+5. Deploy the service   
+
+<img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image31.png" alt="Logo" width="1200">
+
+6. Demonstrate rolling updates:
    - Change NGINX version from `latest` to `alpine`.
+     
+     <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image16.png" alt="Logo" width="1200">
+     
    - Deploy the updated application.
    - Monitor the rollout.
+
+    <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image25.png" alt="Logo" width="1200">
+
 
 ---
 
@@ -137,6 +207,9 @@ You are provided with a misconfigured systemd service or Kubernetes Deployment.
 
 ### Solution
 1. Incorrect file location for `task1.js` was identified.
+
+<img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image13.png" alt="Logo" width="1200">
+
 2. Reload systemd to recognize the new unit file:
    ```bash
    sudo systemctl daemon-reload
@@ -149,8 +222,19 @@ You are provided with a misconfigured systemd service or Kubernetes Deployment.
    ```bash
    sudo systemctl start task1.service
    ```
-5. Check the error log file and fix the file location.
-6. Verify if the service is working correctly.
+<img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image18.png" alt="Logo" width="1200">
+
+5. Check the error log file.
+
+<img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image10.png" alt="Logo" width="1200">
+
+6. Fix the file location
+
+<img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image8.png" alt="Logo" width="1200">
+
+7. Verify if the service is working correctly.
+
+<img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image3.png" alt="Logo" width="1200">
 
 ---
 

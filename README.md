@@ -171,13 +171,13 @@ Validate experience with Kubernetes and high-availability configurations.
 <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image26.png" alt="Logo" width="1200">
 
 4. Create a LoadBalancer service (`service.yaml`) to expose the application:
-   ```bash
-   kubectl apply -f service.yaml
-   ```
+
 <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image7.png" alt="Logo" width="1200">
 
 5. Deploy the service   
-
+   ```bash
+   kubectl apply -f service.yaml
+   ```
 <img src="https://github.com/bayogluteoman/DevOps_Engineer_Assignment-/blob/main/images/image31.png" alt="Logo" width="1200">
 
 6. Demonstrate rolling updates:
